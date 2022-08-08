@@ -1,15 +1,106 @@
-.container{
-    max-width: 1360px;
-    width: 100%;
-    padding: 0px 20px;
-    margin: 0 auto;
-}
-
 .hero_section{
+    min-width: 320px ;
+    margin-top: 5px;
+}
+.hero_section_elements_wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.hero_section_img,.hero_section_content{
-    width: 40%;
+.hero_section_img{
+    width: 320px;
 }
+.hero_section_img img{
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.hero_section_content{
+    width: 100%;
+}
+
+
+.hero_section_content_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero_section_content_wrapper span{
+    padding: 5px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.hero_section_content_wrapper a{
+    text-decoration: none;
+    color: #B0946D;
+    font-weight: 700;
+}
+.hero_section_content_wrapper h1{
+    margin-bottom: 0;
+}
+.hero_section_content_wrapper_button{
+    display: flex;
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#my_name_id{
+    margin: 10px 0px;
+}
+.hero_section_content_wrapper_button button{
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    width:300px;
+    height: 35px;
+    border-radius: 3px;
+    /* transform: translate(-50%, -50%); */
+    background-color: black;
+    color: white;
+    transition: all .5s ease;
+}
+.hero_section_content_wrapper_button button:hover{
+    background-color: #B0946D;
+    color: black;
+}
+
+.social_icons{
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+    padding: 10px 0px;
+}
+.social_icons a{
+    padding: 5px 0px;
+    /* list-style-type:none; */
+
+}
+.social_icons a svg{
+    height: 20px;
+    text-decoration: none;
+    /* color: #B0946D; */
+    color: black;
+    cursor: pointer;
+    transition: all .5s ease
+}
+.social_icons a svg:hover{
+
+    color: #B0946D;
+
+}
+
+@media(min-width:640px){
+
+}
+
