@@ -190,7 +190,7 @@
 }
 @media(min-width:1024px){
     .hero_section{
-        min-width: 1024px;
+        /* min-width: 1024px; */
         padding: 40px 100px;
     }
     .container{
@@ -288,6 +288,9 @@
         background-color: #B0946D;
         color: black;
     }
+    /* .sidebar_close_icon:hover{
+        color: #B0946D;
+    } */
     
   
    

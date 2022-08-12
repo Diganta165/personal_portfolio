@@ -5,7 +5,7 @@ import Hero_Section from '../Hero_Section/Hero_Section';
 const Home = () => {
     return (
         <div>
-            {/* <Head_Header></Head_Header> */}
+            <Head_Header></Head_Header>
             <Hero_Section></Hero_Section>
         </div>
     );
