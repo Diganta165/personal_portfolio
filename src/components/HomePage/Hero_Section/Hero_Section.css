@@ -1,6 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .hero_section{
     min-width: 320px ;
-    margin-top: 5px;
+    padding-top: 10px;
 }
 .hero_section_elements_wrapper{
     display: flex;
@@ -65,7 +69,6 @@
     width:300px;
     height: 35px;
     border-radius: 3px;
-    /* transform: translate(-50%, -50%); */
     background-color: black;
     color: white;
     transition: all .5s ease;
@@ -83,13 +86,10 @@
 }
 .social_icons a{
     padding: 5px 0px;
-    /* list-style-type:none; */
-
 }
 .social_icons a svg{
     height: 20px;
     text-decoration: none;
-    /* color: #B0946D; */
     color: black;
     cursor: pointer;
     transition: all .5s ease
@@ -101,6 +101,195 @@
 }
 
 @media(min-width:640px){
+   
+    .hero_section_elements_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .hero_section_img{
+        margin-left: 50px;
+    }
+    .hero_section_content{
+        gap: 20px;
+    }
+
+    .hero_section_content_wrapper span{
+        padding: 5px 0px;
+        font-size: 12px;
+        font-weight: 600;
+        
+    }
+    .hero_section_content_wrapper_button{
+        display: flex;
+        padding: 16px 0px;
+        font-size: 12px;
+        font-weight: 400;
+        
+    }
+    #my_name_id{
+        font-size: 25px;
+    }
+    .hero_section_content_wrapper_button button{
+        font-size: 12px;
+        font-weight: 700;
+        width:250px;
+        background-color: #B0946D;
+        color: white;
+        transition: all .5s ease;
+    }
+    .social_icons a{
+        padding: 5px 0px;
+    }
+    .social_icons a svg{
+        height: 17px;
+        color: black;
+        cursor: pointer;
+        transition: all .5s ease
+    }
+}
+@media(min-width:768px){
+
+    .hero_section_img{
+        width: 45%;
+        margin-left: 50px;
+    }
+    .hero_section_content{
+        width: 45%;
+        gap: 10px;
+    }
+
+    .hero_section_content_wrapper span{
+        padding: 5px 0px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .hero_section_content_wrapper_button{
+        font-size: 14px;
+    }
+    #my_name_id{
+        font-size: 30px;
+    }
+    .hero_section_content_wrapper_button button{
+        font-size: 14px;
+        font-weight: 700;
+        width:250px;
+        background-color: #000;
+        color: white;
+    }
+    .social_icons a{
+        padding: 5px 0px;
+    }
+    .social_icons a svg{
+        height: 18px;
+        color: black;
+        cursor: pointer;
+    }
+}
+@media(min-width:1024px){
+    .hero_section{
+        min-width: 1024px;
+        padding: 40px 100px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .hero_section_elements_wrapper{
+       gap: 20px;
+    }
+    .hero_section_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: unset;
+    }
+    .hero_section_img img{
+        width: 70%;
+    }
+    .hero_section_content{
+        width: 45%;
+        gap: 10px;
+    }
+
+    .hero_section_content_wrapper span{
+        padding: 8px 0px;
+        font-size: 17px;
+        font-weight: 600;
+        
+    }
+    .hero_section_content_wrapper_button{
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+    #my_name_id{
+        font-size: 35px;
+    }
+    .hero_section_content_wrapper_button button{
+        padding: 5px 0px;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+        width:350px;
+        height: 40px;
+        background-color: #000;
+        color: white;
+    }
+    .hero_section_content_wrapper_button button:hover{
+        background-color: #B0946D;
+        color: black;
+    }
+    .social_icons a{
+        padding: 5px 0px;
     
+    }
+    .social_icons a svg{
+        height: 20px;
+        color: black;
+        cursor: pointer;
+    }
+}
+@media(min-width:1440px){
+    .hero_section_img img{
+        width: 70%;
+    }
+    .hero_section_content{
+        width: 45%;
+        gap: 10px;
+    }
+
+    .hero_section_content_wrapper span{
+        font-size: 18px;
+        
+    }
+    .hero_section_content_wrapper_button{
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+    #my_name_id{
+        font-size: 40px;
+    }
+    .hero_section_content_wrapper_button button{
+        padding: 6px 0px;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+        width:350px;
+        height: 42px;
+        background-color: #000;
+        color: white;
+    }
+    .hero_section_content_wrapper_button button:hover{
+        background-color: #B0946D;
+        color: black;
+    }
+    
+  
+   
 }
 
