@@ -1,3 +1,14 @@
 .blog_section{
-    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+            row-gap: 25px;
+            column-gap: 20px; */
+            display: flex;
+            flex-direction: column;
+           gap: 30px;
+           /* position: relative; */
+           margin-top: 60px;
+}
+.blog_header_section{
+    margin: 20px 40px;
 }
