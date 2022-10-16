@@ -21,7 +21,7 @@
     border-bottom: 1px solid #B0946D;
     display: block;
     /* width: 70rem; */
-    width: 30rem;
+    width: 40rem;
     opacity: 0.5;
     /* margin-left: 20rem; */
     /* transform: translateX(-50%) */
@@ -83,4 +83,27 @@
     font-size: 15px;
     margin-top: 12px;
     word-spacing: 0.8em;
+}
+
+@media(max-width: 1024px) {
+    .card_item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_document_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        display: none;
+    }
+    .card_description{
+        text-align: center;
+    }
+    .card_item_bottom_line{
+        width: 15rem;
+    }
+
 }

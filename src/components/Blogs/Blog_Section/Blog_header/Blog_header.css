@@ -39,3 +39,11 @@
     width: 50px;
     transform-origin: left center;
 } */
+@media(max-width: 768px){
+    .blog_header_title{
+        font-size: 3.5rem;
+    }
+    .title_description {
+        font-size: 1.2rem;
+    }
+}
