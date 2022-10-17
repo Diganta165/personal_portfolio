@@ -1,6 +1,6 @@
 .card_item{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* column-gap: 80px; */
 
 }
