@@ -1,0 +1,13 @@
+.capsule_buttons{
+    width: auto;
+    margin-top: 50px;
+}
+.capsule_buttons_container{
+    padding: 0px 350px;
+}
+.capsule_buttons_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

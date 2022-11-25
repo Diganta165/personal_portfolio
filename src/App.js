@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/HomePage/Home/Home';
 import { Routes, Route, Link } from "react-router-dom";
 import Blog_Section from './components/Blogs/Blog_Section/Blog_Section';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element = {<Home />} />
         <Route path='/blog' element = {<Blog_Section />} />
+        <Route path='/portfolio' element = {<Portfolio />} />
       </Routes>
     </div>
   );

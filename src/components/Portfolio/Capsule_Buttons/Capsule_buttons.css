@@ -1,0 +1,24 @@
+.capsule_button{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #B0946D;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .capsule_button{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .capsule_button:hover{
+        color: #fff;
+        background-color: #000;
+    }
+}
+

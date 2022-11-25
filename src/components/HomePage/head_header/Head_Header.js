@@ -17,6 +17,7 @@ const Head_Header = () => {
                         <Link to="/" className='navigation_link'>Home</Link>
                         <Link to="/blog" className='navigation_link'>Blog</Link>
                         <Link to="/about" className='navigation_link'>About</Link>
+                        <Link to="/portfolio" className='navigation_link'>Portfolio</Link>
                         
                     </li>
                     <div className="ham_burger_nav_icon_wrapper" onClick={openSidebar} >
@@ -37,6 +38,7 @@ const Head_Header = () => {
                         <Link to="/" className='navigation_link sidebar_nav_link'>Home</Link>
                         <Link to="/blog" className='navigation_link sidebar_nav_link'>Blog</Link>
                         <Link to="/about" className='navigation_link sidebar_nav_link'>About</Link>
+                        <Link to="/portfolio" className='navigation_link sidebar_nav_link'>Portfolio</Link>
                     </li>
                 </div>
             </div>
