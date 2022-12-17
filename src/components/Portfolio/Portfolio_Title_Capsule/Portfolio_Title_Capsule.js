@@ -35,6 +35,10 @@ const Portfolio_Title_Capsule = () => {
         setCapsuleButtons(capsuleButtonsData);
     }, []);
 
+    const clickedMe = (element) =>{
+        console.log("element",element)
+    }
+
     
 
     return (
@@ -49,7 +53,7 @@ const Portfolio_Title_Capsule = () => {
                         <div onClick ={selectedProjectType} key = {index}>button</div>
                     })} */}
                     {
-                        capsuleButtons.map((element, index) => <Capsule_Buttons key={index} button ={element}></Capsule_Buttons>)
+                        capsuleButtons.map((element, index) => <Capsule_Buttons handler={()=> clickedMe(element)} key={index} button ={element}></Capsule_Buttons>)
                     }
                 </div>
                 

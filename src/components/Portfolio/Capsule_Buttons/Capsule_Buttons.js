@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Capsule_buttons.css"
-const Capsule_Buttons = ({button}) => {
+const Capsule_Buttons = ({button, handler}) => {
     const [buttonData, setButtonData] = useState({
         name:"All",
         id:1,
@@ -26,7 +26,8 @@ const Capsule_Buttons = ({button}) => {
     return (
         <>
             {/* <button onClick={loadPortfolioData} className='capsule_button'> {button.name}</button> */}
-            <button onClick={loadPortfolioData}  className='capsule_button'> {button.name}</button>
+            {/* <button onClick={loadPortfolioData}  className='capsule_button'> {button.name}</button> */}
+            <button onClick={handler}  className='capsule_button'> {button.name}</button>
             
         </>
     );
