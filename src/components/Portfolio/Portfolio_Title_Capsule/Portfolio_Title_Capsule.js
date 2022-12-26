@@ -1,19 +1,96 @@
 import React, { useEffect, useState } from 'react';
 import "./Portfolio_Title_Capsule.css"
 import Capsule_Buttons from '../Capsule_Buttons/Capsule_Buttons';
+import airThemeImage from "../../../utils/images/air_theme.webp";
+import harvestThemeImage from "../../../utils/images/harvest_theme.webp";
+import furnishThemeImage from "../../../utils/images/furnish_theme.webp";
+import galaxyThemeImage from "../../../utils/images/galaxy_theme.webp";
+import themeWidgetsImage from "../../../utils/images/widgets.PNG";
 
 
-const Portfolio_Title_Capsule = () => {
+const Portfolio_Title_Capsule = (props) => {
     const capsuleButtonsData = [
         {
             name: "All",
             id:1,
-            data: []
+            data: [
+                {
+                    title: "Air Theme",
+                    linK: "https://store.soppiya.com/themes/62566cc003e3ac02b5a49c4a",
+                    livePreviewLink: "https://air.soppiya.com",
+                    image: airThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Harvest Theme",
+                    linK: "https://store.soppiya.com/themes/6252701be8395ab980e914bb",
+                    livePreviewLink: "https://harvest.soppiya.com",
+                    image: harvestThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Furnish Theme",
+                    linK: "https://store.soppiya.com/themes/625536bc03e3ac02b5a49c49",
+                    livePreviewLink: "https://furnish.soppiya.com",
+                    image: furnishThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Galaxy Theme",
+                    linK: "https://store.soppiya.com/themes/61cbfca84763300bc4ae90b8",
+                    livePreviewLink: "https://galaxy.soppiya.com",
+                    image: galaxyThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Theme Widgets",
+                    linK: "https://store.soppiya.com/widgets",
+                    livePreviewLink: "",
+                    image: themeWidgetsImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+            ]
         },
         {
             name: "Work",
             id:2,
-            data: []
+            data: [
+                {
+                    title: "Air Theme",
+                    linK: "https://store.soppiya.com/themes/62566cc003e3ac02b5a49c4a",
+                    livePreviewLink: "https://air.soppiya.com",
+                    image: airThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Harvest Theme",
+                    linK: "https://store.soppiya.com/themes/6252701be8395ab980e914bb",
+                    livePreviewLink: "https://harvest.soppiya.com",
+                    image: harvestThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Furnish Theme",
+                    linK: "https://store.soppiya.com/themes/625536bc03e3ac02b5a49c49",
+                    livePreviewLink: "https://furnish.soppiya.com",
+                    image: furnishThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Galaxy Theme",
+                    linK: "https://store.soppiya.com/themes/61cbfca84763300bc4ae90b8",
+                    livePreviewLink: "https://galaxy.soppiya.com",
+                    image: galaxyThemeImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+                {
+                    title: "Theme Widgets",
+                    linK: "https://store.soppiya.com/widgets",
+                    livePreviewLink: "",
+                    image: themeWidgetsImage,
+                    technologies: "Html, Css & Vanilla JavaScript"
+                },
+            ]
         },
         {
             name: "Personal",
@@ -24,6 +101,7 @@ const Portfolio_Title_Capsule = () => {
 
     // const [projectType, setProjectType] = useState("");
     const [capsuleButtons, setCapsuleButtons] = useState([]);
+    
 
     // const selectedProjectType = (v) =>{
     //     // setProjectType(previousValue => previousValue = button);
@@ -36,8 +114,11 @@ const Portfolio_Title_Capsule = () => {
     }, []);
 
     const clickedMe = (element) =>{
-        console.log("element",element)
-    }
+        // console.log("element",element)
+        // const newData = element;
+        // setPortfolioData(newData);
+        props.portfolioSelectedDataFunction(element)
+    };
 
     
 
@@ -54,6 +135,11 @@ const Portfolio_Title_Capsule = () => {
                     })} */}
                     {
                         capsuleButtons.map((element, index) => <Capsule_Buttons handler={()=> clickedMe(element)} key={index} button ={element}></Capsule_Buttons>)
+                    }
+                </div>
+                <div className='capsule_data_container'>
+                    {
+
                     }
                 </div>
                 
