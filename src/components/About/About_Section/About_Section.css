@@ -1,0 +1,56 @@
+.about_section{
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.about_me_section,.current_employment_section,.skills_section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.current_employment_section,.skills_section{
+    margin-top: 30px;
+}
+.highlighted_text{
+    font-weight: bold;
+    /* color: #B0946D; */
+}
+.highlighted_text:hover{
+    color: #B0946D;
+}
+.skill_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.highlighted_text_skills{
+    border: 1px solid #B0946D;
+    padding: 5px;
+    border-radius: 3px;
+}
+.resume_download{
+    margin-top: 20px;
+    cursor: pointer;
+}
+@media(min-width: 768px){
+    .about_section{
+        padding: 0px 150px;
+        font-size: 16px;
+    }
+}
+@media(min-width: 1024px){
+    .about_section{
+        padding: 0px 150px;
+        font-size: 18px;
+    }
+}
+@media(min-width: 1364px){
+    .about_section{
+        padding: 0px 500px;
+        font-size: 20px;
+    }
+}
