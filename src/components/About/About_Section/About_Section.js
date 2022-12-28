@@ -46,7 +46,7 @@ const About_Section = () => {
                         <span className='highlighted_text_skills'>JavaScript</span>
 
                     </div>
-                    <p className='resume_download highlighted_text'>My Resume <FontAwesomeIcon icon={faDownload} /></p>
+                    <p className='resume_download highlighted_text'>Hire Me <FontAwesomeIcon icon={faDownload} /></p>
                 </div>
             </div>
         </>
