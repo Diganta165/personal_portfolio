@@ -119,27 +119,15 @@ const Portfolio_Title_Capsule = (props) => {
         // setPortfolioData(newData);
         props.portfolioSelectedDataFunction(element)
     };
-
+    // props.portfolioSelectedDataFunction(capsuleButtons[0].data)
     
 
     return (
         <div className='capsule_buttons'>
             <div className='capsule_buttons_container'>
                 <div className='capsule_buttons_wrapper'>
-                    {/* {capsuleButtons.map(button => <Capsule_Buttons onClick = {this.selectedProjectType.bind(this)} button = {button} key ={button.id}/>)} */}
-                    {/* {capsuleButtons.map((button, index) => <Capsule_Buttons onClick = {(button)=>selectedProjectType(button.name)}  button = {button} key ={index} />)} */}
-                    {/* {capsuleButtons.map((button, index) => <Capsule_Buttons onClick = {selectedProjectType}  button = {button} key ={index} />)} */}
-                    {/* {capsuleButtons.map((button, index) => {
-                        console.log(button.name);
-                        <div onClick ={selectedProjectType} key = {index}>button</div>
-                    })} */}
                     {
                         capsuleButtons.map((element, index) => <Capsule_Buttons handler={()=> clickedMe(element)} key={index} button ={element}></Capsule_Buttons>)
-                    }
-                </div>
-                <div className='capsule_data_container'>
-                    {
-
                     }
                 </div>
                 

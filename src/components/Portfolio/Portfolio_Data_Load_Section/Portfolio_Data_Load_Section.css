@@ -1,3 +1,26 @@
 .project_portfolio_section{
+    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+    row-gap: 20px;
+    column-gap: 10px;
+    /* padding: 0px 300px; */
+    padding: 20px;
+}
+
+@media(min-width:1025px){
+    .project_portfolio_section{
+        padding: 0px 100px;
+        column-gap: 20px;
+    }
+    
+}
+@media(min-width:1364px){
+    .project_portfolio_section{
+        padding: 0px 300px;
+    }
+    
 }

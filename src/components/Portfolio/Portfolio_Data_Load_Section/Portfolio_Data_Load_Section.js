@@ -1,5 +1,6 @@
 import React from 'react';
 import Portfolio_Element from '../Portfolio_Element/Portfolio_Element';
+import "../Portfolio_Data_Load_Section/Portfolio_Data_Load_Section.css"
 
 const Portfolio_Data_Load_Section = ({data}) => {
     return (

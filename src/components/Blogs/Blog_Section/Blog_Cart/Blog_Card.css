@@ -43,6 +43,7 @@
     text-decoration: none;
     color: #000;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 .card_title:hover{
     color: #B0946D;
@@ -82,7 +83,7 @@
     line-height: 1.6;
     font-size: 15px;
     margin-top: 12px;
-    word-spacing: 0.8em;
+    /* word-spacing: 0.8em; */
 }
 
 @media(max-width: 1024px) {
@@ -100,7 +101,7 @@
         display: none;
     }
     .card_description{
-        text-align: center;
+        /* text-align: center; */
     }
     .card_item_bottom_line{
         width: 15rem;
