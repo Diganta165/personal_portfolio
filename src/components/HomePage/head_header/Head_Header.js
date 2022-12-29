@@ -1,23 +1,28 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./Head_Header.css"
 import { Routes, Route, Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Head_Header = () => {
     let [isOpen, setIsOpen] = useState(false);
     const openSidebar =()=>setIsOpen(true);
     const closeSidebar = ()=> setIsOpen(false);
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1WXvTavWlETsIpMIJEClFTrY1tMjydrvE&export=download")
     return (
         <div>
             <header className='header_section'>
                 <nav className='navigation_bar'>
                     <li className='navigation_li'>
-                        <img src='logomakr.com/app/7TLVYv' />
+                        {/* <img src='logomakr.com/app/7TLVYv' /> */}
+                        <div className='navigation_link navigation_link_image'>Diganta</div>
                     </li>
                     <li className='navigation_li navigation_links'>
                         <Link to="/" className='navigation_link'>Home</Link>
                         <Link to="/blog" className='navigation_link'>Blog</Link>
                         <Link to="/about" className='navigation_link'>About</Link>
                         <Link to="/portfolio" className='navigation_link'>Portfolio</Link>
+                        <div onClick={openResumeDownloadLink} className='navigation_link'>Hire Me <FontAwesomeIcon icon={faDownload} /></div>
                         
                     </li>
                     <div className="ham_burger_nav_icon_wrapper" onClick={openSidebar} >

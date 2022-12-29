@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
 import "./About_Section.css"
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About_Section = () => {
     const openSoppiyaLink = () =>{
@@ -17,6 +17,7 @@ const About_Section = () => {
     const openWidgetsLink = () =>{
         window.open("https://store.soppiya.com/widgets")
     }
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1WXvTavWlETsIpMIJEClFTrY1tMjydrvE&export=download")
     return (
         <>
             <div className='about_section'>
@@ -46,7 +47,7 @@ const About_Section = () => {
                         <span className='highlighted_text_skills'>JavaScript</span>
 
                     </div>
-                    <p className='resume_download highlighted_text'>Hire Me <FontAwesomeIcon icon={faDownload} /></p>
+                    <p className='resume_download highlighted_text' onClick={openResumeDownloadLink}>Hire Me <FontAwesomeIcon icon={faDownload} /></p>
                 </div>
             </div>
         </>

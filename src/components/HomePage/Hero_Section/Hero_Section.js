@@ -12,7 +12,7 @@ import { faDev, faGithub, faGithubAlt, faGithubSquare, faLinkedin, faLinkedinIn,
 // import hero_image from "../../../utils/images/test.jpg";
 
 const Hero_Section = () => {
-
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1WXvTavWlETsIpMIJEClFTrY1tMjydrvE&export=download")
     return (
         <div className='hero_section'>
             <div className='container  hero_section_elements_wrapper'>
@@ -31,7 +31,7 @@ const Hero_Section = () => {
                         <span>Currently working on <a href='https://soppiya.com'>Soppiya.</a></span>
                         <span>I like to do sketch and play competetive video games.</span>
                         <div className='hero_section_content_wrapper_button'>
-                            <button >Let's build something distinct</button>
+                            <button onClick={openResumeDownloadLink}>Let's build something distinct</button>
                         </div>
                         <span className='social_icons'>
                             <a href='https://www.linkedin.com/in/md-shafiur-rahman-diganta-592a96202/' target='_blank'><FontAwesomeIcon icon={faLinkedinIn} /></a>
