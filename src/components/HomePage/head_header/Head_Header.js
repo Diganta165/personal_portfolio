@@ -8,7 +8,7 @@ const Head_Header = () => {
     let [isOpen, setIsOpen] = useState(false);
     const openSidebar =()=>setIsOpen(true);
     const closeSidebar = ()=> setIsOpen(false);
-    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1WXvTavWlETsIpMIJEClFTrY1tMjydrvE&export=download")
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1FnL80vK5G8XMDEJgedlrp6RyVYTlexYz&export=download")
     return (
         <div>
             <header className='header_section'>
