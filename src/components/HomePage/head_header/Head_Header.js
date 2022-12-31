@@ -8,8 +8,9 @@ const Head_Header = () => {
     let [isOpen, setIsOpen] = useState(false);
     const openSidebar =()=>setIsOpen(true);
     const closeSidebar = ()=> setIsOpen(false);
-    const clicOutsideSidebar = () =>{
-
+    const clicOutsideSidebar = (event) =>{
+        const clickedInside = document.getElementById("sidebar_nav_wrapper").contains(event.target);
+        if(!clickedInside) closeSidebar();
     };
     const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1FnL80vK5G8XMDEJgedlrp6RyVYTlexYz&export=download")
     return (
@@ -37,13 +38,13 @@ const Head_Header = () => {
                         </div>
                 </nav>
             </header>
-            <div className={isOpen === true ? "sidebar sidebar_popup sidebar_show" : "sidebar sidebar_popup"} id='sidebar_section' >
+            <div className={isOpen === true ? "sidebar sidebar_popup sidebar_show" : "sidebar sidebar_popup"} id='sidebar_section' onClick={(event)=> clicOutsideSidebar(event)}>
                 <div className='sidebar_container' id='sidebar_container_id' >
                     <div>
                         <span className="sidebar_close_icon_wrapper" id='sidebar_close_icon' onClick={closeSidebar}>
                             <svg className="sidebar_close_icon" xmlns="http://www.w3.org/2000/svg" width="17.121" height="17.121" viewBox="0 0 17.121 17.121"> <g id="Menu_icon" data-name="Menu icon" transform="translate(-301.439 -35.439)"> <line id="Shape_3" data-name="Shape 3" x2="21.213" transform="translate(302.5 51.5) rotate(-45)" fill="none" stroke="#fff" strokeLinecap="round" strokeWidth="1.5"></line> <line id="Shape_1" data-name="Shape 1" x2="21.213" transform="translate(302.5 36.5) rotate(45)" fill="none" stroke="#fff" strokeLinecap="round" strokeWidth="1.5"></line> </g> </svg></span>
                     </div>
-                    <li className='navigation_link_list sidebar_nav_link_wrapper'>
+                    <li className='navigation_link_list sidebar_nav_link_wrapper' id='sidebar_nav_wrapper' >
                         <Link to="/" className='navigation_link sidebar_nav_link'>Home</Link>
                         <Link to="/blog" className='navigation_link sidebar_nav_link'>Blog</Link>
                         <Link to="/about" className='navigation_link sidebar_nav_link'>About</Link>
