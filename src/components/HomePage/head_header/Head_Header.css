@@ -82,6 +82,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    height: 860px;
 }
 .sidebar_nav_link_wrapper{
     padding: 30px 0px;

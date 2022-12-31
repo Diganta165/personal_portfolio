@@ -8,6 +8,9 @@ const Head_Header = () => {
     let [isOpen, setIsOpen] = useState(false);
     const openSidebar =()=>setIsOpen(true);
     const closeSidebar = ()=> setIsOpen(false);
+    const clicOutsideSidebar = () =>{
+
+    };
     const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1FnL80vK5G8XMDEJgedlrp6RyVYTlexYz&export=download")
     return (
         <div>
@@ -15,7 +18,8 @@ const Head_Header = () => {
                 <nav className='navigation_bar'>
                     <li className='navigation_li'>
                         {/* <img src='logomakr.com/app/7TLVYv' /> */}
-                        <div className='navigation_link navigation_link_image'>Diganta</div>
+                        {/* <div className='navigation_link navigation_link_image'>Diganta</div> */}
+                        <Link to="/" className='navigation_link navigation_link_image'>Diganta</Link>
                     </li>
                     <li className='navigation_li navigation_links'>
                         <Link to="/" className='navigation_link'>Home</Link>
@@ -33,7 +37,7 @@ const Head_Header = () => {
                         </div>
                 </nav>
             </header>
-            <div  className={isOpen === true ? "sidebar sidebar_popup sidebar_show" : "sidebar sidebar_popup"} id='sidebar_section' >
+            <div className={isOpen === true ? "sidebar sidebar_popup sidebar_show" : "sidebar sidebar_popup"} id='sidebar_section' >
                 <div className='sidebar_container' id='sidebar_container_id' >
                     <div>
                         <span className="sidebar_close_icon_wrapper" id='sidebar_close_icon' onClick={closeSidebar}>
