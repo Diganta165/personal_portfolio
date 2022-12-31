@@ -12,7 +12,7 @@ import { faDev, faGithub, faGithubAlt, faGithubSquare, faLinkedin, faLinkedinIn,
 // import hero_image from "../../../utils/images/test.jpg";
 
 const Hero_Section = () => {
-    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1FnL80vK5G8XMDEJgedlrp6RyVYTlexYz&export=download")
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
     return (
         <div className='hero_section'>
             <div className='container  hero_section_elements_wrapper'>

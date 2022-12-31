@@ -12,7 +12,7 @@ const Head_Header = () => {
         const clickedInside = document.getElementById("sidebar_nav_wrapper").contains(event.target);
         if(!clickedInside) closeSidebar();
     };
-    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1FnL80vK5G8XMDEJgedlrp6RyVYTlexYz&export=download")
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
     return (
         <div>
             <header className='header_section'>

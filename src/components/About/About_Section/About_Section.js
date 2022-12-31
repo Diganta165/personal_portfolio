@@ -17,7 +17,7 @@ const About_Section = () => {
     const openWidgetsLink = () =>{
         window.open("https://store.soppiya.com/widgets")
     }
-    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1FnL80vK5G8XMDEJgedlrp6RyVYTlexYz&export=download")
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
     return (
         <>
             <div className='about_section'>
