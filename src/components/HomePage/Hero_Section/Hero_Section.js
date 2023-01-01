@@ -17,16 +17,12 @@ const Hero_Section = () => {
         <div className='hero_section'>
             <div className='container  hero_section_elements_wrapper'>
                 <div className='hero_section_img'>
-                    {/* <img src = '../../../utils/images/diganta.jpg' /> */}
                     <img src = {hero_image} />
                 </div>
                 <div className='hero_section_content'>
                     <div className='hero_section_content_wrapper'>
                         <h1><span>Hi, <FontAwesomeIcon icon={faHand} /> I'm </span><br/><p className='animate__animated animate__bounce' id='my_name_id'>Md. Shafiur Rahman Diganta</p></h1>
-                        {/* <FontAwesomeIcon icon='fa-solid' /> */}
-                        {/* <i className="fa-solid fa-user"></i> */}
-                        
-                        {/* <FontAwesomeIcon icon={'sort-circle-down'} /> */}
+
                         <span>Now working as a front-end developer at <a href='https://bd.linkedin.com/company/conceptxltd?original_referer=https%3A%2F%2Fwww.google.com%2F' target = "_blank">ConceptX.</a></span>
                         <span>Currently working on <a href='https://soppiya.com'>Soppiya.</a></span>
                         <span>I like to do sketch and play competetive video games.</span>

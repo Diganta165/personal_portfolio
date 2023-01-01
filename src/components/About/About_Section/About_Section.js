@@ -29,13 +29,10 @@ const About_Section = () => {
                 <div className='current_employment_section'>
                     <h1>Current Employment</h1>
                     <p>At this moment I am working as a <span className='highlighted_text'>Jr. Software Engineer</span> at <span onClick={openSoppiyaLink} className='highlighted_text'>Soppiya Innovation Limited</span>. I have been working here for over a year now. Here I build <span className='highlighted_text' onClick={openThemesLink}>themes</span> for <span onClick={openSoppiyaWebsite} className='highlighted_text'>Soppiya</span>. We build the whole theme in <span >Vanilla JavaScript</span>. I handle all the JavaScript functionalities, DOM manipulation and do all the logical implementation for <span onClick={openThemesLink} className='highlighted_text'>Themes</span> and <span onClick={openWidgetsLink} className='highlighted_text'>Widgets</span>.</p>
-                    {/* <p className='highlighted_text'>My Resume <FontAwesomeIcon icon={faDownload} /></p> */}
-                    {/* <FontAwesomeIcon icon="fa-solid fa-download" />   */}
                 </div>
 
                 <div className='skills_section'>
                     <h1>Skills</h1>
-                    {/* <p>I am good at <span>REACT</span> and <span>Vanilla JavaScript</span>. I </p> */}
                     <div className='skill_wrapper'>
                         <span className='highlighted_text_skills'>React</span>
                         <span className='highlighted_text_skills'>Redux</span>
