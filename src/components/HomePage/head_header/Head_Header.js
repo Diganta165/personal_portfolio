@@ -12,7 +12,9 @@ const Head_Header = () => {
         const clickedInside = document.getElementById("sidebar_nav_wrapper").contains(event.target);
         if(!clickedInside) closeSidebar();
     };
-    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
+    // const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1KtXFm0-goPYlp0DH6AmTVhhuL5oBAjwf&export=download")
+    // https://drive.google.com/file/d/1KtXFm0-goPYlp0DH6AmTVhhuL5oBAjwf/view?usp=sharing
     return (
         <div>
             <header className='header_section'>

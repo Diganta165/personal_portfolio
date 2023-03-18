@@ -12,7 +12,8 @@ import { faDev, faGithub, faGithubAlt, faGithubSquare, faLinkedin, faLinkedinIn,
 // import hero_image from "../../../utils/images/test.jpg";
 
 const Hero_Section = () => {
-    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
+    // const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1ptedcFPS6xUZRjPZeMyyysbmnyLanlU9&export=download")
+    const openResumeDownloadLink = ()=> window.open("https://drive.google.com/uc?id=1KtXFm0-goPYlp0DH6AmTVhhuL5oBAjwf&export=download")
     return (
         <div className='hero_section'>
             <div className='container  hero_section_elements_wrapper'>
